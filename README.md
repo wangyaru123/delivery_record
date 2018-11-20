@@ -1,2 +1,2 @@
-# -delivery_record
+# delivery_record
 微信小程序--页面刷新，本地存储，瀑布流，回到顶部，长按删除，转发分享
