@@ -1,0 +1,58 @@
+<!--index.wxml-->
+<scroll-view scroll-top='{{topNum}}' scroll-y="true" bindscroll="scrolltoupper">
+  <view class="free-WaterfallFlow">
+    <block>
+      <view class="flex-wrap" wx:for="{{expressList}}" wx:key='{{item.id}}' wx:if="{{item.id%2!=''}}">
+        <view>{{item.name}}</view>
+        <view>
+          <text>{{item.source}}</text>--
+          <text>{{item.type}}</text>--
+          <text>{{item.address}}</text>--
+          <text>{{item.preson}}</text>--
+          <text>{{item.account}}</text>--
+          <text>{{item.remark}}</text>
+        </view>
+        <view class="edit_buttom">
+          <view class="edit_buttom_l" bindtap="edit" id="{{item.id}}">
+            <image mode="aspectFit" src="../../image/edit.png"></image>
+          </view>
+          <view class="edit_buttom_r" bindtap="delete" id="{{item.id}}">
+            <image mode="aspectFit" src="../../image/delete.png"></image>
+          </view>   
+        </view>
+      </view>
+    </block>
+    <block>
+      <view class="flex-wrap" wx:for="{{expressList}}" wx:key='{{item.id}}' wx:if="{{item.id%2==''}}">
+        <!-- <image mode="widthFix" src="{{item.src}}"></image> -->
+        <view>{{item.name}}</view>
+        <view>
+          <text>{{item.source}}</text>--
+          <text>{{item.type}}</text>--
+          <text>{{item.address}}</text>--
+          <text>{{item.preson}}</text>--
+          <text>{{item.account}}</text>--
+          <text>{{item.remark}}</text>
+        </view>
+        <view class="edit_buttom">
+          <view class="edit_buttom_l" bindtap="edit" id="{{item.id}}">
+            <image mode="aspectFit" src="../../image/edit.png"></image>
+          </view>
+          <view class="edit_buttom_r" bindtap="delete" id="{{item.id}}">
+            <image mode="aspectFit" src="../../image/delete.png"></image>
+          </view>   
+        </view>
+      </view>
+    </block>
+  </view>
+</scroll-view>
+<view class='btn-add' bindtap='clickAdd'>+</view>
+<image src='../../image/totop.png' class='top' hidden='{{!floorstatus}}' bindtap="returnTop"></image>
+
+
+ 
+
+
+
+
+

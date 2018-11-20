@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/my/myIndex",
+    "pages/add/index",
+    "pages/account/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#06a7e2",
+    "navigationBarTitleText": "生活助手",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor": "#0faeff",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "image/home.png",
+      "selectedIconPath":"image/home_on.png",
+      "text": "首页"
+    },{
+      "pagePath": "pages/my/myIndex",
+      "iconPath": "image/my.png",
+      "selectedIconPath":"image/my_on.png",
+      "text": "我的"
+    }]
+  }
+}

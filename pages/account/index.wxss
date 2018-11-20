@@ -1,0 +1,53 @@
+/* pages/account/index.wxss */
+.container{
+  min-height:900rpx;
+}
+/*添加按钮*/
+.btn-add {
+  margin-left:85%;
+  background-color: #0faeff;
+  color: #fff;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  font-size: 32px;
+  text-align: center;
+}
+/* 删除样式 */
+.detail-box .item {
+  position: relative;
+  height: 26px;
+  line-height: 22px;
+  padding: 2px 0;
+  border-bottom: 1px dotted #bdbdbd;
+}
+.al {
+    background-color: #fff;
+    color: #5F5F5F;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.al+view {  
+    z-index:500;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    color: white;
+    padding: 10px 16px;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 6px;
+    line-height: 1;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+/* 输入input样式 */
+.weui-input{
+  border: 1px solid #1aad19;
+  border-radius: 8px;
+  width:99%;
+  text-align: center;
+}

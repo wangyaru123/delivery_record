@@ -1,0 +1,28 @@
+/* pages/add/index.wxss */
+page{
+  background-color: lightcyan;
+}
+.container{
+  width:80%;
+  margin-left:10%;
+  margin-top:5%;
+}
+.addview button{
+  width:30%;
+  float:left;
+}
+.modalviewitem{
+  display: flex;
+  align-items: center;
+  height:40px;
+  color:#000;
+}
+.modalviewitem:last-child{
+ margin-top:20px;
+}
+.modalviewitem input{
+  width:150px;
+  height:40px;
+  border:1px solid #ccc;
+  border-radius:10px;
+}

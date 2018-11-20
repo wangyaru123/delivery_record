@@ -1,0 +1,49 @@
+<!--pages/add/index.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="modalviewitem">
+      名称：<input type='text' name='name' value="{{theExpressList.name}}" auto-focus/>
+    </view>
+    <view class="modalviewitem">
+      <picker name="sourceIndex" bindchange="bindPickerSourceChange" value="{{sourceIndex}}" range="{{sourceArray}}">
+        <view class="picker">
+          渠道：{{sourceArray[sourceIndex]}}
+        </view>
+      </picker>   
+    </view> 
+    <view class="modalviewitem">
+      <picker name="accountIndex" bindchange="bindPickerAccountChange" value="{{accountIndex}}" range="{{accountList}}">
+        <view class="picker">
+          账号：{{accountList[accountIndex]}}
+        </view>
+      </picker>   
+    </view>
+    <view class="modalviewitem">
+      <picker name="typeIndex" bindchange="bindPickerTypeChange" value="{{typeIndex}}" range="{{typeArray}}">
+        <view class="picker">
+          类型：{{typeArray[typeIndex]}}
+        </view>
+      </picker>  
+    </view>
+    <view class="modalviewitem">
+      <picker name="addressIndex" bindchange="bindPickerAddressChange" value="{{addressIndex}}" range="{{addressList}}">
+        <view class="picker">
+          地址：{{addressList[addressIndex]}}
+        </view>
+      </picker>   
+    </view> 
+    <view class="modalviewitem">
+      <picker name="presonIndex" bindchange="bindPickerPresonChange" value="{{presonIndex}}" range="{{presonList}}">
+        <view class="picker">
+          收货人：{{presonList[presonIndex]}}
+        </view>
+      </picker>   
+    </view> 
+    <view class="modalviewitem"> 
+      备注：<input type='text' name="remark" value="{{theExpressList.remark}}"/>  
+    </view> 
+    <view class="modalviewitem">
+      <button type="primary" formType="submit">确定</button>  
+    </view>
+  </form>
+</view>

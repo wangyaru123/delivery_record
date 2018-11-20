@@ -1,0 +1,24 @@
+<!--pages/account/index.wxml-->
+<view class="container" bindtap="clear">
+  <view class='btn-add' bindtap='clickAdd'>+</view>
+  <view class='detail-box' wx:if="{{t==account}}">
+    <view class='item' wx:for="{{accountList}}" wx:key="key" wx:for-item="item" wx:for-index="index">
+      <view class='al' catchlongpress="delete" data-index="{{index}}">{{item}}</view>
+      <view wx:if="{{isDeleteShow==index}}" catchtap="toDelete" data-index="{{index}}">删除</view>
+    </view>
+  </view>
+  <view class='detail-box' wx:if="{{t==address}}">
+    <view class='item' wx:for="{{addressList}}" wx:key="key" wx:for-item="item" wx:for-index="index">
+      <view class='al' catchlongpress="delete" data-index="{{index}}">{{item}}</view>
+      <view wx:if="{{isDeleteShow==index}}" catchtap="toDelete" data-index="{{index}}">删除</view>
+    </view>
+  </view>
+  <view class='detail-box' wx:if="{{t==preson}}">
+    <view class='item' wx:for="{{presonList}}" wx:key="key" wx:for-item="item" wx:for-index="index">
+      <view class='al' catchlongpress="delete" data-index="{{index}}">{{item}}</view>
+      <view wx:if="{{isDeleteShow==index}}" catchtap="toDelete" data-index="{{index}}">删除</view>
+    </view>
+  </view>
+  <view class="weui-cell__bd" wx:if="{{isInputShow}}"><input class="weui-input" type="text" value="{{addvalue}}" bindblur="addAccountList"></input></view>
+</view>
+
